@@ -1,3 +1,4 @@
+#reno
 import pygame
 import math
 import random
@@ -43,11 +44,11 @@ target_x, target_y = 600, HEIGHT - 120
 target_respawn_time = 0  # Waktu untuk respawn target
 
 # Muat gambar latar belakang
-background = pygame.image.load("/Users/dicky/Desktop/game/bg.jpg")
+background = pygame.image.load("/Users/dicky/Documents/Github/game-fisika-phyton/bg.jpg")
 background = pygame.transform.scale(background, (800, 600))  # Ubah ukuran sesuai layar
 
 # Muat gambar angry
-ball_image = pygame.image.load("/Users/dicky/Desktop/game/ball.png")
+ball_image = pygame.image.load("/Users/dicky/Documents/Github/game-fisika-phyton/ball.png")
 ball_image = pygame.transform.scale(ball_image, (radius * 4, radius * 4))  # Ubah ukuran bola
 
 # Fungsi untuk memindahkan target ke posisi baru
@@ -63,7 +64,9 @@ def draw_text(text, x, y, color=BLACK):
 
 # Variabel untuk menyimpan jarak jatuh
 fall_distance = None
+#reno
 
+#dicky
 # Loop utama
 running = True
 while running:
@@ -114,7 +117,10 @@ while running:
             respawn_target()
 
         time += 0.1  # Increment waktu
+#dicky
+        
 
+#alif
     # Gambar bola menggunakan gambar PNG
     screen.blit(ball_image, (int(x_new) - radius, int(y_new) - radius))
 
@@ -145,3 +151,4 @@ while running:
     clock.tick(60)
 
 pygame.quit()
+#alif
